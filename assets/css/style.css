@@ -1161,7 +1161,7 @@ section.departmentCore .item p {
   border-bottom: 1px solid #fff;
 }
 .accordion-body > .content {
-  padding: 20px;
+  /* padding: 20px; */
   padding-top: 0;
   margin-bottom: 4rem;
 }
