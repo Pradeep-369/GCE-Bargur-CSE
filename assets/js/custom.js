@@ -195,6 +195,22 @@
     });
   });
 
+
+//Nav Click Events
+// $(function() {
+//   $('.nav > li > a ').click(function() {
+//      $(this).toggleClass('active');
+//   });
+// });
+
+$(function() {
+  $('.nav > li > a').removeClass('active');
+  $(this).addClass('active');
+  $(this).siblings('img').removeClass('active').end().addClass('active');
+});
+
+
+
   // Menu elevator animation
   $(".scroll-to-section a[href*=\\#]:not([href=\\#])").on("click", function () {
     if (
