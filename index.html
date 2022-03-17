@@ -19,8 +19,10 @@
 
     <!-- Favicon Images -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images//favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -48,7 +50,7 @@
                  <ul class="nav">
                   <li >
                     <a href="./index.html#top" class="active">Home</a></li>
-                  <li><a href="./index.html#about">About</a></li>
+                  <li><a href="./index.html#about" class="">About</a></li>
                   <li ><a href="./index.html#newMessageBox">News Update</a></li> 
                   <li ><a href="./index.html#faculty">Faculty</a></li>
                   <li ><a href="./facilities.html">Facilities</a></li>
@@ -92,10 +94,14 @@
                  <footer class="blockquote-footer"> <cite title="Source Title">GCE-Bargur</cite></footer>
                </blockquote>
 
-
-               <p class="heroQuote"><q><i> Computer Armory to Control EveryThing </i></q></p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nisi sint possimus odio, ea unde fuga voluptatum commodi aliquam nesciunt et, aut dolores dolorum impedit voluptates animi aliquid, molestiae repudiandae.</p>
+               <p class="heroQuote"><q><i> Computer Armory to Control EveryThing  </i></q></p>
+               <blockquote class="blockquote text-center">
+                <p>All of a sudden, we've lost a lot of control,he said. We can't turn off our internet; we can't turn off
+                  our smartphones; we can't turn off our computers. You used to ask a smart person a question. Now,
+                  who do you ask? It starts with <a href="http://google.com" title="Google" target="_blank">G-O</a>, and it's not God…</p>
+                <footer class="blockquote-footer"> <cite title="Source Title">Steve Wozniak</cite></footer>
+              </blockquote>
+           
 
               <!-- <div class="main-button-red">
                   <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
@@ -121,7 +127,7 @@
               </div>
               <div class="down-content">
                 <h4>Best Education</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, eveniet officiis? Incidunt laudantium dolore aliquam, et praesentium officiis!</p>
+                <p>The Institute is committed to generating,  preserving knowledge, and to working with others to bring this knowledge to bear on the world's great challenges.</p>
               </div>
             </div>
             
@@ -131,8 +137,8 @@
                 <i class="fa-solid fa-chalkboard-user"></i>
               </div>
               <div class="down-content">
-                <h4>Best Teachers</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, eveniet officiis? Incidunt laudantium dolore aliquam, et praesentium officiis!</p>
+                <h4>Best Faculties</h4>
+                <p>When they're not busy pioneering the frontiers of their fields, GCEB faculty members play a vital role in shaping the Institute's vibrant campus community</p>
               </div>
             </div>
             
@@ -143,7 +149,9 @@
               </div>
               <div class="down-content">
                 <h4>Best Students</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, eveniet officiis? Incidunt laudantium dolore aliquam, et praesentium officiis!</p>
+                <p>Education can open our eyes and expand are minds unlike anything else. It
+                  allows us to continually reshape how we see the world, leading to an
+                  improved and more well-rounded life.</p>
               </div>
             </div>
             
@@ -154,7 +162,7 @@
               </div>
               <div class="down-content">
                 <h4>Fully WIFI Enabled Campus</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, eveniet officiis? Incidunt laudantium dolore aliquam, et praesentium officiis!</p>
+                <p>The college has a Wfi-enabled campus. In addition to being used in the teaching-learning process and for general office and administrative work. also available for for students.</p>
               </div>
             </div>
             
@@ -165,7 +173,8 @@
               </div>
               <div class="down-content">
                 <h4>Best Networking</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, eveniet officiis? Incidunt laudantium dolore aliquam, et praesentium officiis!</p>
+                <p>I don't know about you, but I often need some inspiration to get on with doing whatever
+                  needs doing. And networking is no different.</p>
               </div>
             </div>
             
@@ -261,7 +270,7 @@
 
 <section class="newMessageBox" id="newMessageBox">
 
-<div class="row d-flex- justify-content-center align-items-center w-100">
+<!-- <div class="row d-flex- justify-content-center align-items-center w-100">
   <div class="col-md-12 col-sm-12 w-100" >
     <div class="owl-carousel" id="carousel">
       <div class="item">
@@ -315,8 +324,13 @@
     
     </div>
   </div>
-</div>
-  </section>
+</div> -->
+ 
+
+
+
+
+</section>
 
   <section class="our-faculty" id="faculty">
     <div class="container">
@@ -330,22 +344,32 @@
           <div class="owl-courses-item owl-carousel">
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/Dr.NafeesaBegum.JPG" alt="sample87" />
+                <img src="./assets/Staffs/Dr.NafeesaBegum.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/dr.nafeesa_Profile.JPG" alt="profile-sample4" class="profile" />
+                <div>
+                  <img src="./assets/Staffs Profile/dr.nafeesa_Profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>	Dr. J. Nafeesa Begum<span>Professor and Vice-Principal, Head of Department</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                 <div class="profileBod">
+                  <p><q>There are many ways you can make an impact on the
+                    world. But there is no greater impact that you can make
+                    than spreading education, and empowering people </q>
+                  </p>
+                 </div>
+                </div>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:nafeesa.research@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
               </figure>
             </div>
             <div class="item">
-              <figure class="snip1336 hover"><img src="./assets/Staffs/Karthikeyan.JPG" alt="sample74" />
+              <figure class="snip1336 hover"><img src="./assets/Staffs/Karthikeyan.JPG" alt="sample74" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/karthileyan_profile.JPG" alt="profile-sample2" class="profile" />
+                  <img src="./assets/Staffs Profile/karthileyan_profile.JPG" alt="profile-sample2" class="profile" loading="lazy"/>
                   <h2>C.M.T.Karthigeyan<span>Assistant Professor</span></h2>
-                  <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+                  <p><q>A proper education sets people up to grow personally, professionally, and socially. It
+                    can awaken joy, curiosity and a deep desire to solve problems and help others</q></p>  
+<br><br><br>
+
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:	tkar2k@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
@@ -354,11 +378,15 @@
 
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/Selvi_bg.JPG" alt="sample87" />
+                <img src="./assets/Staffs/Selvi_bg.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/Selvi_Profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/Selvi_Profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>Dr. S. Selvi<span>Assistant Professor</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>
+                    Enriching our brains with new and valuable information improves our ability to think,
+                    analyze and process the world around us. 
+                  </q></p>
+                  <br><br><br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:sel_raj241@yahoo.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
@@ -367,11 +395,16 @@
 
             
             <div class="item">
-              <figure class="snip1336 hover"><img src="./assets/Staffs/Subathra.JPG" alt="sample74" />
+              <figure class="snip1336 hover"><img src="./assets/Staffs/Subathra.JPG" alt="sample74" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/subthra_profile.JPG" alt="profile-sample2" class="profile" />
+                  <img src="./assets/Staffs Profile/subthra_profile.JPG" alt="profile-sample2" class="profile" loading="lazy"/>
                   <h2>R.Subathra<span>Assistant Professor</span></h2>
-                  <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+                  <p><q>
+                    Learning on our own is important, but it doesn't stop there. The value of education is
+                    in spreading it around, and using what we know to educate, inspire and transform
+                    others
+                  </q></p>
+                  <br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:rpssuba@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
@@ -380,11 +413,16 @@
 
 
             <div class="item">
-              <figure class="snip1336 hover"><img src="./assets/Staffs/manimaran_bg.JPG" alt="sample74" />
+              <figure class="snip1336 hover"><img src="./assets/Staffs/manimaran_bg.JPG" alt="sample74" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/manimaran_profile.JPG" alt="profile-sample2" class="profile" />
+                  <img src="./assets/Staffs Profile/manimaran_profile.JPG" alt="profile-sample2" class="profile" loading="lazy"/>
                   <h2>J.Manimaran <span>Assistant Professor (CAS)</span></h2>
-                  <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+                  <p><q>
+                    Education is one of the most powerful things to live with happiness and
+                    prosperity. It empowers minds that will be able to conceive good thoughts and
+                    ideas.
+                  </q></p>
+                  <br><br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:j.manimaran@gcebargur.ac.in" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
@@ -393,59 +431,75 @@
         
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs Profile/Balamurugan_Profile.JPG" alt="sample87" />
+                <img src="./assets/Staffs Profile/Balamurugan_Profile.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/Balamurugan_Profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/Balamurugan_Profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>R.Balamurugan<span>Assistant Professor (CAS)</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>Your life is a school. Everything that happens is teaching you something. Pay
+                    attention</q> </p>
+                    <br><br><br> <br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:r.balamurugan@gcebargur.ac.in" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
               </figure>
             </div>
+
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/AnniChris.JPG" alt="sample87" />
+                <img src="./assets/Staffs/AnniChris.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/annie_profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/annie_profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>Mrs. Anne Chris Evert<span>Assistant Professor (Temp)</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>Sometimes, you just need a little inspiration. And education is often one of the most inspiring
+                    subjects</q> </p>
+
+                    <br><br><br> <br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:annenesan89@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
               </figure>
             </div>
+
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/Nithya.jpg" alt="sample87" />
+                <img src="./assets/Staffs/Nithya.jpg" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/nithya_profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/nithya_profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>	R.Nithya<span>Assistant Professor (Temp)</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>Education is one the most important things in life. However, in this online era,
+                    students find it hard to stay focused. Don't lose your focus.</q> </p> <br><br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:	nithyaraj47@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
               </figure>
             </div>
+
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/Ms.Divya.JPG" alt="sample87" />
+                <img src="./assets/Staffs/Ms.Divya.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/divya_profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/divya_profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>G.Dhivya<span>Assistant Professor (Temp)</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>
+                    Education makes a man human. It provides food to the thoughts and helps you to get the best out of
+                    yourself
+                  </q> </p> <br><br><br> <br>
                   <div class="d-flex justify-content-between align-items-center"><a href="mailto:	dhivyagunasekaran2@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
               </figure>
             </div>
+
             <div class="item">
               <figure class="snip1336">
-                <img src="./assets/Staffs/purshothaman_bg.JPG" alt="sample87" />
+                <img src="./assets/Staffs/purshothaman_bg.JPG" alt="sample87" loading="lazy"/>
                 <figcaption>
-                  <img src="./assets/Staffs Profile/purshothaman_profile.JPG" alt="profile-sample4" class="profile" />
+                  <img src="./assets/Staffs Profile/purshothaman_profile.JPG" alt="profile-sample4" class="profile" loading="lazy"/>
                   <h2>B.Purushothaman<span>Assistant Professor (Temp)</span></h2>
-                  <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                  <p><q>Learning is just about knowing about something, whereas education means to
+                    teach yourself the true meanings of life, it means to get yourself into a pot
+                    of knowledge.</q> </p>
+                    <br><br>
                   <div class="d-flex justify-content-between align-items-center "><a href="mailto:santhoshite@gmail.com" class="contact-mail">Contact mail</a>
                     <a href="faculty.html#" class="info">More Info</a></div>
                 </figcaption>
@@ -510,6 +564,123 @@
       </div>
     </div>
   </section>
+
+<section class="gallery bg-dark p-5">
+  <div class="container ">
+    <div id="gallery">
+      <div><img src="https://picsum.photos/600/600/?image=512"/><a href="#lightbox-1"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=513"/><a href="#lightbox-2"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=514"/><a href="#lightbox-3"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=515"/><a href="#lightbox-4"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=516"/><a href="#lightbox-5"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=517"/><a href="#lightbox-6"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=518"/><a href="#lightbox-7"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=519"/><a href="#lightbox-8"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=520"/><a href="#lightbox-9"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=521"/><a href="#lightbox-10"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=522"/><a href="#lightbox-11"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=523"/><a href="#lightbox-12"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=524"/><a href="#lightbox-13"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=525"/><a href="#lightbox-14"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=526"/><a href="#lightbox-15"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=527"/><a href="#lightbox-16"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=528"/><a href="#lightbox-17"></a></div>
+      <div><img src="https://picsum.photos/600/600/?image=529"/><a href="#lightbox-18"></a></div>
+    </div>
+    <div class="lightbox" id="lightbox-1">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=512"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-2">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=513"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-3">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=514"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-4">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=515"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-5">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=516"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-6">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=517"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-7">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=518"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-8">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=519"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-9">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=520"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-10">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=521"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-11">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=522"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-12">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=523"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-13">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=524"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-14">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=525"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-15">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=526"/>
+        <div class="title">Hello World</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-16">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=527"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-17">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=528"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox-18">
+      <div class="content"><img src="https://picsum.photos/1920/1080/?image=529"/>
+        <div class="title">Caption Text</div><a class="close" href="#gallery"></a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center"><a name="Load More" id="" class="btn btn-light "  href="./gallery.html" role="button">Go To Gallery</a></div>
+
+</section>
 
   <section class="contact" id="contact">
     <div class="container">
