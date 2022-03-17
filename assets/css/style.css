@@ -36,6 +36,7 @@ reset
   padding: 0;
   border: 0;
   outline: 0;
+  box-sizing: border-box;
 }
 
 .clearfix:after {
@@ -715,10 +716,15 @@ banner
   font-weight: 900;
 }
 
+.main-banner .caption blockquote p {
+  font-size: calc(0.1rem + 1vw);
+}
+
 .main-banner .caption blockquote .blockquote-footer {
   color: rgb(192, 189, 189);
   margin-block: 0.5rem;
-  font-size: calc(0.4rem + 1vw);
+  font-size: clamp(.5rem,calc(0.1rem + 1vw),.9rem);
+  text-align: right;
 }
 .main-banner .caption p {
   color: #fff;
@@ -959,6 +965,163 @@ Message Box
     transform-origin: left;
   }
 }
+/* 
+Gallery Section
+ */
+ 
+#gallery {
+  display: grid;
+  height: calc(100vh - 10px);
+  grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+  grid-gap: 0.5em;
+}
+@media (max-width: 800px) {
+  #gallery {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery > div {
+    width: 48%;
+    margin: 1%;
+  }
+}
+@media (max-width: 800px) and (max-width: 350px) {
+  #gallery > div {
+    width: 98%;
+  }
+}
+#gallery > div:nth-child(6n+1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#gallery > div:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+#gallery > div:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#gallery > div > a {
+  opacity: 0;
+  position: absolute;
+  color: #000;
+  background-color: #000;
+  font: bold 4em "Helvetica";
+  text-shadow: 0 -1px 5px #fff, -1px 0px 5px #fff, 0 1px 5px #fff, 1px 0px 5px #fff;
+  padding: 2rem;
+  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
+  transition: all ease 1s;
+}
+#gallery > div > img {
+  width: 100%;
+  min-height: 100%;
+  transition: all ease 1s;
+}
+
+#gallery > div:hover a {
+  opacity: 1;
+}
+#gallery > div {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#gallery div,
+#gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+[id^=lightbox-] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  opacity: 0;
+  transition: opacity 450ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+[id^=lightbox-]:target {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+[id^=lightbox-] .content {
+  max-width: 90%;
+  position: relative;
+  color: #fff;
+}
+[id^=lightbox-] .content:hover > a.close {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+[id^=lightbox-] .content:hover > .title {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+[id^=lightbox-] .content:hover > .title::after {
+  opacity: 1;
+}
+[id^=lightbox-] .content > * {
+  transition: all 450ms ease-in-out;
+}
+[id^=lightbox-] .title {
+  display: block;
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(50%);
+  font-size: 1.5em;
+  opacity: 0;
+}
+[id^=lightbox-] .title::after {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 350ms ease-in-out 250ms;
+  opacity: 0;
+  transform-origin: bottom;
+  mix-blend-mode: soft-light;
+}
+
+[id^=lightbox-] a.close {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0, 0);
+  opacity: 0;
+  transform-origin: right top;
+  text-decoration: none;
+  color: #fff;
+}
+[id^=lightbox-] a.close::after {
+  content: "X";
+}
+
 /*
 ---------------------------------------------
 services
@@ -969,6 +1132,7 @@ services
   margin-top: -135px;
   position: absolute;
   width: 100%;
+  line-height: 1;
 }
 
 .services .item {
@@ -981,6 +1145,8 @@ services
   text-align: center;
   color: #fff;
   padding: 40px;
+  height: 290px;
+  
 }
 .services .item .icon {
   max-width: 60px;
@@ -1002,7 +1168,7 @@ services
 
 .services .item p {
   color: #fff;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .services .owl-nav {
@@ -1193,13 +1359,15 @@ section.our-faculty {
   padding-bottom: 130px;
 }
 section.our-faculty .item {
-  max-height: clamp(7rem, 35rem, 35rem);
+  max-height: clamp(7rem, 39rem, 41rem);
   width: 18rem;
 }
 section.our-faculty .item .snip1336 > img:first-of-type {
   width: 100%;
-  height: 210px;
+  height: 220px;
 }
+
+
 .our-faculty .owl-nav {
   text-align: center;
   position: absolute;
